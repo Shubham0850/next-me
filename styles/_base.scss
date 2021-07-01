@@ -1,0 +1,91 @@
+// INCLUDING FONTS
+
+@font-face {
+    font-family: "Rocoleta";
+    src: url("/fonts/Recoleta-RegularDEMO.otf");
+}
+@font-face {
+    font-family: "Avenir";
+    src: url("/fonts/AvenirLTStd-Roman.otf");
+}
+
+//
+
+// VARIABLES
+$color-primary: #4d3c5e;
+$color-blue: #4b64ef;
+$color-white: #fff;
+$color-light: #f7f8fa;
+$color-dark: #161c2d;
+
+$font-secondary: "Avenir", sans-sarif;
+$font-primary: "Rocoleta", sans-serif;
+
+//
+
+// BASE STYLESHEET
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    // cursor: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px / 16px = 62.5%
+}
+
+body {
+    background-color: $color-white;
+    font-family: $font-secondary;
+    color: $color-primary;
+    transition: all 0.3s;
+}
+.dark-mode {
+    background-color: $color-dark;
+    color: $color-white;
+
+    .nav__link {
+        color: $color-white;
+    }
+
+    .projects__details .number {
+        color: $color-dark;
+        text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+    .footer {
+        ion-icon {
+            color: $color-blue;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+    .about-me{
+        background-color: $color-dark;
+        &__link{
+            color: $color-white;
+            &:hover{
+                color: $color-blue;
+            }
+        }
+    }
+}
+
+// /////////
+
+// mixins
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// //////////
+

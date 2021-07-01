@@ -1,0 +1,257 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
+
+    &__logo-img {
+        width: 25rem;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        flex: 0 0 50%;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: medium;
+        color: $color-primary;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-top: 5rem;
+
+    &__img {
+        display: block;
+        width: 30rem;
+        margin: 1rem auto;
+        height: 30rem;
+        border-radius: 50%;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+
+        transition: all 0.5s;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 1rem 7rem rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .heading-primary {
+        padding: 2rem;
+    }
+    .heading-secondary {
+        padding: 2rem;
+    }
+}
+
+.projects {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(50rem, 45%) minmax(50rem, 45%);
+    grid-row-gap: 12rem;
+    grid-column-gap: 5rem;
+    justify-content: center;
+
+    &__heading {
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        margin-bottom: -8rem;
+    }
+
+    &__details {
+        width: 95%;
+        transition: all 0.8s;
+        align-self: center;
+        grid-template-columns: 0 / 1;
+
+        // color: #fff;
+        text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+        .number {
+            float: right;
+            font-size: 15rem;
+            // margin-left: -5rem;
+            margin-top: -3rem;
+            line-height: 1;
+            color: #fff;
+        }
+        .name {
+            font-size: 4rem;
+            font-family: $font-primary;
+            margin-bottom: 1rem;
+        }
+        .short-summery {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .tech-used {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                padding: 0.5rem 1rem;
+                font-size: 1.5rem;
+                background-color: #fff;
+                color: $color-primary;
+                border-radius: 3px;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+                margin-bottom: 1rem;
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .links {
+            margin-top: 1rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        transition: all 0.5s;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(0.98);
+            border-radius: 1rem;
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    .heading-primary {
+        padding: 8rem 0;
+    }
+    .heading-secondary {
+        padding-bottom: 5rem;
+    }
+    ion-icon {
+        font-size: 3.5rem;
+        margin: 0 1rem;
+        color: $color-primary;
+        transition: all 0.5s;
+        transform: scale(1);
+
+        &:hover {
+            color: $color-blue;
+            transform: scale(1.2) translateY(-2px);
+        }
+    }
+
+    .contact-links {
+        padding: 2rem;
+        width: fit-content;
+        margin: 1rem auto;
+        display: block;
+
+        &__link {
+            text-decoration: none;
+        }
+    }
+}
+
+.about-me-bg {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    @include flexCenter();
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.5);
+    transition: all .2s ease-in-out;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+.about-me {
+    width: 80%;
+    height: auto;
+    background-color: $color-light;
+    border-radius: 2px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    &__banner {
+        // position: absolute;
+        // bottom: 0;
+        // right: 0;
+        // width: 20rem;
+        // border-radius: 2px;
+        width: 50%;
+        height: auto;
+        background-image: url("/images/logo-mockup.jpg");
+        background-size: cover;
+        background-position: right;
+    }
+
+    &__details {
+        width: 50%;
+        padding: 3rem;
+    }
+
+    .close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 4rem;
+        z-index: 25;
+        line-height: 0.8;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-blue;
+        }
+    }
+
+    &__link-box {
+        margin-top: 1rem;
+    }
+    &__link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color-primary;
+        margin-right: 2rem;
+
+        &:hover {
+            color: $color-blue;
+        }
+    }
+    .heading-primary{
+        margin-bottom: 1rem;
+    }
+}
+
+
