@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: "Rocoleta";
-    src: url("/fonts/Recoleta-RegularDEMO.otf");
+    src: url("./fonts/Recoleta-RegularDEMO.otf");
 }
 @font-face {
     font-family: "Avenir";
-    src: url("/fonts/AvenirLTStd-Roman.otf");
+    src: url("./fonts/AvenirLTStd-Roman.otf");
 }
 
 //
@@ -54,16 +54,21 @@ body {
         color: $color-white;
     }
 
+    .projects-container{
+        background-color: $color-dark;
+        
+    }
+
     .projects__details .number {
         color: $color-dark;
         text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
     .footer {
-        ion-icon {
-            color: $color-blue;
+        .icon {
+            color: $color-white !important;
 
             &:hover {
-                color: $color-white;
+                color: $color-blue !important;
             }
         }
     }

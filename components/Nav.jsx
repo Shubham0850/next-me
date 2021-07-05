@@ -1,28 +1,87 @@
-import React from 'react'
+import React, { useState } from "react";
 import NavLogoLight from "../public/logo-light.png";
 import NavLogoDark from "../public/logo-dark.png";
+import Image from "next/image";
+import audio from "../public/sound/switch.mp3";
+import About from "./About";
+import {
+  WiSolarEclipse,
+  WiLightning,
+  WiMeteor,
+  WiAlien,
+  WiNightClear,
+} from "react-icons/wi";
 
 export default function Nav() {
-    return (
-        <nav className="nav">
-      <img
-        src={NavLogoLight}
-        alt="Shubham logo"
-        class="nav__logo-img"
-      />
-      <ul className="nav__items">
-        <li className="nav__item">
-          <a href="#about-me" className="nav__link">About me</a>
-        </li>
-        <li className="nav__item">
-          <a href="#projects" className="nav__link">Projects</a>
-        </li>
-        <li className="nav__item">
-          <a href="#contact" className="nav__link">Contact</a>
-        </li>
-        <li className="nav__item nav__item--mode" id="dark-mode">dArk mode</li>
-      </ul>
-    </nav>
+  const [darkBtn, setDarkBtn] = useState(false);
+  const [about, setAbout] = useState(false);
 
-    )
+  const ToggleMode = () => {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    const ad = new Audio(audio);
+    ad.play();
+
+    if (!darkBtn) {
+      setDarkBtn(true);
+    } else {
+      setDarkBtn(false);
+    }
+  };
+
+  const showAbout = () => {
+    if (about) {
+      setAbout(false);
+    } else {
+      setAbout(true);
+    }
+  };
+
+  return (
+    <nav className="nav">
+      <div className="nav__logo">
+        <Image
+          src={darkBtn ? NavLogoDark : NavLogoLight}
+          alt="Shubham logo"
+          class="nav__logo-img"
+        />
+      </div>
+      <ul className="nav__items">
+        <li className="nav__item nav__link" onClick={showAbout}>
+          🧔About me
+        </li>
+        <li className="nav__item">
+          <a href="#projects" className="nav__link">
+          📜
+            Projects
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#contact" className="nav__link">
+          🤙
+            Contact
+          </a>
+        </li>
+        <li
+          className="nav__item nav__item--mode"
+          onClick={ToggleMode}
+          id="dark-mode"
+        >
+          {darkBtn ? (
+            <span className="icon">🌞</span>
+          ) : (
+            // <WiNightClear className="icon" />
+            <span className="icon"> 🌃</span>
+          )}
+        </li>
+      </ul>
+      {about && (
+        <>
+          <div className="about-me-bg" onClick={showAbout}></div>
+          <About />
+        </>
+      )}
+    </nav>
+  );
 }

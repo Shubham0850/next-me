@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0px 2rem;
 
-    &__logo-img {
+    &__logo {
         width: 25rem;
     }
     &__items {
@@ -14,17 +14,41 @@
         list-style: none;
         flex: 0 0 50%;
     }
+    &__item{
+        cursor: pointer;
+    }
     &__link {
         text-decoration: none;
         font-size: 1.6rem;
         font-weight: medium;
         color: $color-primary;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $color-blue;
+        }
+        &:hover .icon {
+            transform: translateX(-2px);
+        }
+    }
+    #dark-mode {
+        transition: all 0.3s;
+    }
+    .icon {
+        font-size: 3rem;
+        transition: all 0.3s;
+        &:hover {
+            color: $color-blue;
+        }
     }
 }
 
 .header {
     text-align: center;
     margin-top: 5rem;
+    padding-bottom: 6rem;
 
     &__img {
         display: block;
@@ -32,6 +56,7 @@
         margin: 1rem auto;
         height: 30rem;
         border-radius: 50%;
+        overflow: hidden;
         box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
 
         transition: all 0.5s;
@@ -51,28 +76,52 @@
     }
 }
 
-.projects {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: minmax(50rem, 45%) minmax(50rem, 45%);
-    grid-row-gap: 12rem;
-    grid-column-gap: 5rem;
-    justify-content: center;
+.projects-container{
+    background-color: $color-light;
+    padding: 6rem 0;
+
+    &__heading{
+        width: 100%;
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+}
+
+.projects {
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    &:not(:last-child){
+        margin-bottom: 10rem;
+    }
+
+    // display: grid;
+    // grid-template-columns: minmax(50rem, 45%) minmax(50rem, 45%);
+    // grid-row-gap: 12rem;
+    // grid-column-gap: 5rem;
+    // justify-content: center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 
     &__heading {
-        grid-column: 1 / -1;
+        // grid-column: 1 / -1;
         font-size: 2rem;
         margin-bottom: -8rem;
     }
 
     &__details {
-        width: 95%;
+        flex: 0 0 48%;
         transition: all 0.8s;
         align-self: center;
-        grid-template-columns: 0 / 1;
+        // grid-template-columns: 0 / 1;
 
         // color: #fff;
         text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -83,7 +132,7 @@
             // margin-left: -5rem;
             margin-top: -3rem;
             line-height: 1;
-            color: #fff;
+            color: $color-light;
         }
         .name {
             font-size: 4rem;
@@ -106,7 +155,7 @@
             li {
                 padding: 0.5rem 1rem;
                 font-size: 1.5rem;
-                background-color: #fff;
+                background-color: $color-light;
                 color: $color-primary;
                 border-radius: 3px;
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
@@ -122,6 +171,9 @@
         }
     }
 
+    &__img-box{
+        flex: 0 0 48%;
+    }
     &__img {
         width: 100%;
         transition: all 0.5s;
@@ -142,18 +194,6 @@
     .heading-secondary {
         padding-bottom: 5rem;
     }
-    ion-icon {
-        font-size: 3.5rem;
-        margin: 0 1rem;
-        color: $color-primary;
-        transition: all 0.5s;
-        transform: scale(1);
-
-        &:hover {
-            color: $color-blue;
-            transform: scale(1.2) translateY(-2px);
-        }
-    }
 
     .contact-links {
         padding: 2rem;
@@ -161,8 +201,20 @@
         margin: 1rem auto;
         display: block;
 
-        &__link {
+        a {
             text-decoration: none;
+            margin: 5px 10px;
+
+            .icon {
+                color: $color-primary;
+                font-size: 40px;
+                transition: all 0.5s ease-out;
+
+                &:hover {
+                    color: $color-blue;
+                    transform: translateY(-5px);
+                }
+            }
         }
     }
 }
@@ -181,16 +233,9 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(.5);
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
-    &:target {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-    }
+    
 }
 
 .about-me {
@@ -199,7 +244,12 @@
     background-color: $color-light;
     border-radius: 2px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    position: relative;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
     display: flex;
     overflow: hidden;
 
@@ -211,7 +261,7 @@
         // border-radius: 2px;
         width: 50%;
         height: auto;
-        background-image: url("/images/logo-mockup.jpg");
+        background-image: url("../public/logo-mockup.jpg");
         background-size: cover;
         background-position: right;
     }
@@ -249,9 +299,7 @@
             color: $color-blue;
         }
     }
-    .heading-primary{
+    .heading-primary {
         margin-bottom: 1rem;
     }
 }
-
-
