@@ -5,9 +5,11 @@ export default function ProjectCard(props) {
   return (
     <div
       className="projects"
+      // data-aos="fade-up"
+      // data-aos-anchor-placement="top-center"
       style={{ flexDirection: props.flex == 1 ? "row-reverse" : "row" }}
     >
-      <div className="projects__img-box">
+      <div className="projects__img-box" data-aos="fade-up-right">
         <Image
           src={require(`../public/${props.image}`)}
           alt="project image"
@@ -15,7 +17,7 @@ export default function ProjectCard(props) {
         />
       </div>
 
-      <div className="projects__details">
+      <div className="projects__details" data-aos="fade-up-left">
         <h1 className="number">{props.no}</h1>
         <h1 className="name">{props.name}</h1>
         <p className="short-summery">{props.summery}</p>

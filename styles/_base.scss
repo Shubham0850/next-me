@@ -17,6 +17,7 @@ $color-blue: #4b64ef;
 $color-white: #fff;
 $color-light: #f7f8fa;
 $color-dark: #161c2d;
+$color-dark-2: #191f30;
 
 $font-secondary: "Avenir", sans-sarif;
 $font-primary: "Rocoleta", sans-serif;
@@ -45,7 +46,28 @@ body {
     font-family: $font-secondary;
     color: $color-primary;
     transition: all 0.3s;
+    scrollbar-width: thin;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .dark-mode {
     background-color: $color-dark;
     color: $color-white;
@@ -54,13 +76,12 @@ body {
         color: $color-white;
     }
 
-    .projects-container{
-        background-color: $color-dark;
-        
+    .projects-container {
+        background-color: $color-dark-2;
     }
 
     .projects__details .number {
-        color: $color-dark;
+        color: $color-dark-2;
         text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
     .footer {
@@ -72,11 +93,11 @@ body {
             }
         }
     }
-    .about-me{
+    .about-me {
         background-color: $color-dark;
-        &__link{
+        &__link {
             color: $color-white;
-            &:hover{
+            &:hover {
                 color: $color-blue;
             }
         }
@@ -93,4 +114,3 @@ body {
 }
 
 // //////////
-

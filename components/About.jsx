@@ -3,12 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="about-me">
-     
-      {/* <img
-          src="./images/dev.gif"
-          alt="shubham photo"
-          class="about-me__banner-img"
-        />  */}
+
       <div className="about-me__banner"></div>
 
       <div className="about-me__details">
@@ -23,19 +18,19 @@ export default function About() {
           <br />I ❤️ what i do😊.
         </p>
         <h2 className="heading-secondary">
-          🙋Available for freelance projects
+          🙋 Available for freelance projects
         </h2>
         <div className="about-me__link-box">
           <a href="#" target="_blan" className="about-me__link">
-            FIVERR
+          ✨ FIVERR
           </a>
           <a href="#" target="_blan" className="about-me__link">
-            UPWORK
+          ✨ UPWORK
           </a>
         </div>
 
         <div className="btn btn--sec">
-          My Resume
+          📥 My Resume
         </div>
       </div>
     </div>

@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Me from "../public/shubham.jpg";
-import { IoIosArrowRoundForward } from "react-icons/io";
-
+import Me from "../public/sqr-logo.png";
+import PlaySound from "./PlaySound";
 
 export default function Header() {
   return (
-    <header className="header" id="smooth-scroll">
+    <header className="header">
       <div className="header__img">
         <Image src={Me} alt="Shubham photo" title="It's me" />
       </div>
@@ -18,8 +17,8 @@ export default function Header() {
         <br />& Software Engineer🎓
       </h1>
 
-      <a href="#contact" className="btn">
-        Contact Me👇 
+      <a href="#contact" className="btn" onMouseOver={PlaySound}>
+        Contact Me👇
       </a>
     </header>
   );

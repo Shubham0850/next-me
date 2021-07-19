@@ -11,6 +11,7 @@ import {
   WiAlien,
   WiNightClear,
 } from "react-icons/wi";
+import PlaySound from "./PlaySound";
 
 export default function Nav() {
   const [darkBtn, setDarkBtn] = useState(false);
@@ -48,17 +49,17 @@ export default function Nav() {
         />
       </div>
       <ul className="nav__items">
-        <li className="nav__item nav__link" onClick={showAbout}>
+        <li className="nav__item nav__link" onMouseOver={PlaySound} onClick={showAbout}>
           🧔About me
         </li>
-        <li className="nav__item">
-          <a href="#projects" className="nav__link">
+        <li className="nav__item" onMouseOver={PlaySound} >
+          <a data-scroll href="#projects" className="nav__link">
           📜
             Projects
           </a>
         </li>
-        <li className="nav__item">
-          <a href="#contact" className="nav__link">
+        <li className="nav__item" onMouseOver={PlaySound} >
+          <a data-scroll href="#contact" className="nav__link">
           🤙
             Contact
           </a>

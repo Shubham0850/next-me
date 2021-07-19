@@ -61,6 +61,7 @@
 
         transition: all 0.5s;
         transform: scale(1);
+        background-color: #fff;
 
         &:hover {
             transform: scale(0.95);
@@ -83,10 +84,10 @@
 
     &__heading{
         width: 100%;
-        max-width: 120rem;
-        margin: 0 auto;
-        padding: 2rem;
-        font-size: 2rem;
+        margin-bottom: 8rem;
+        text-align: center;
+        font-family: $font-primary;
+        font-size: 4rem;
     }
 }
 
@@ -95,16 +96,11 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 5rem;
     
     &:not(:last-child){
         margin-bottom: 10rem;
     }
-
-    // display: grid;
-    // grid-template-columns: minmax(50rem, 45%) minmax(50rem, 45%);
-    // grid-row-gap: 12rem;
-    // grid-column-gap: 5rem;
-    // justify-content: center;
 
     display: flex;
     justify-content: space-around;
@@ -118,13 +114,13 @@
     }
 
     &__details {
-        flex: 0 0 48%;
+        flex: 0 0 45%;
         transition: all 0.8s;
         align-self: center;
         // grid-template-columns: 0 / 1;
 
         // color: #fff;
-        text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+       
 
         .number {
             float: right;
@@ -133,6 +129,7 @@
             margin-top: -3rem;
             line-height: 1;
             color: $color-light;
+            text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
         }
         .name {
             font-size: 4rem;
@@ -172,7 +169,7 @@
     }
 
     &__img-box{
-        flex: 0 0 48%;
+        flex: 0 0 45%;
     }
     &__img {
         width: 100%;
@@ -254,11 +251,6 @@
     overflow: hidden;
 
     &__banner {
-        // position: absolute;
-        // bottom: 0;
-        // right: 0;
-        // width: 20rem;
-        // border-radius: 2px;
         width: 50%;
         height: auto;
         background-image: url("../public/logo-mockup.jpg");
@@ -287,10 +279,11 @@
     }
 
     &__link-box {
-        margin-top: 1rem;
+        margin: 1.5rem 0;
     }
     &__link {
         font-size: 1.5rem;
+        font-weight: bold;
         text-decoration: none;
         color: $color-primary;
         margin-right: 2rem;
@@ -300,6 +293,10 @@
         }
     }
     .heading-primary {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .paragraph{
+        line-height: 1.6;
     }
 }
