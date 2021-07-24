@@ -4,10 +4,7 @@ import Image from "next/image";
 export default function ProjectCard(props) {
   return (
     <div
-      className="projects"
-      // data-aos="fade-up"
-      // data-aos-anchor-placement="top-center"
-      style={{ flexDirection: props.flex == 1 ? "row-reverse" : "row" }}
+      className={props.flex == 1 ? "row-rev projects" : "row projects"}
     >
       <div className="projects__img-box" data-aos="fade-up-right">
         <Image

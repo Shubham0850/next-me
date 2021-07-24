@@ -48,20 +48,22 @@ export default function Nav() {
           class="nav__logo-img"
         />
       </div>
-      <ul className="nav__items">
-        <li className="nav__item nav__link" onMouseOver={PlaySound} onClick={showAbout}>
+      <ul className="nav__items ">
+        <li
+          className="nav__item nav__link hide-on-phone"
+          onMouseOver={PlaySound}
+          onClick={showAbout}
+        >
           🧔About me
         </li>
-        <li className="nav__item" onMouseOver={PlaySound} >
-          <a data-scroll href="#projects" className="nav__link">
-          📜
-            Projects
+        <li className="nav__item" onMouseOver={PlaySound}>
+          <a data-scroll href="#projects" className="nav__link hide-on-phone">
+            📜 Projects
           </a>
         </li>
-        <li className="nav__item" onMouseOver={PlaySound} >
-          <a data-scroll href="#contact" className="nav__link">
-          🤙
-            Contact
+        <li className="nav__item" onMouseOver={PlaySound}>
+          <a data-scroll href="#contact" className="nav__link hide-on-phone">
+            🤙 Contact
           </a>
         </li>
         <li

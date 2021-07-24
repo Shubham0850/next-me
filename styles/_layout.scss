@@ -13,8 +13,11 @@
         align-items: center;
         list-style: none;
         flex: 0 0 50%;
+        @media only screen and (max-width: 600px) {
+            flex: 0 0 10%;
+        }
     }
-    &__item{
+    &__item {
         cursor: pointer;
     }
     &__link {
@@ -50,6 +53,10 @@
     margin-top: 5rem;
     padding-bottom: 6rem;
 
+    @media only screen and (max-widht: 600px) {
+        padding: 3rem;
+    }
+
     &__img {
         display: block;
         width: 30rem;
@@ -75,14 +82,23 @@
     .heading-secondary {
         padding: 2rem;
     }
+    @media only screen and (max-width: 600px) {
+        &__img {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
 }
 
-
-.projects-container{
+.projects-container {
     background-color: $color-light;
     padding: 6rem 0;
 
-    &__heading{
+    @media only screen and (max-width: 600px) {
+        padding: 6rem 2rem;
+    }
+
+    &__heading {
         width: 100%;
         margin-bottom: 8rem;
         text-align: center;
@@ -91,21 +107,34 @@
     }
 }
 
+.row {
+    flex-direction: row;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+.row-rev {
+    flex-direction: row-reverse;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
 .projects {
-    
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 5rem;
-    
-    &:not(:last-child){
-        margin-bottom: 10rem;
-    }
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+        @media only screen and (max-width: 600px) {
+            margin-bottom: 5rem;
+        }
+    }
 
     &__heading {
         // grid-column: 1 / -1;
@@ -120,7 +149,6 @@
         // grid-template-columns: 0 / 1;
 
         // color: #fff;
-       
 
         .number {
             float: right;
@@ -130,11 +158,18 @@
             line-height: 1;
             color: $color-light;
             text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+            @media only screen and (max-width: 600px) {
+                font-size: 10rem;
+            }
         }
         .name {
             font-size: 4rem;
             font-family: $font-primary;
             margin-bottom: 1rem;
+            @media only screen and (max-width: 600px) {
+                font-size: 3.5rem;
+            }
         }
         .short-summery {
             font-size: 1.8rem;
@@ -168,7 +203,7 @@
         }
     }
 
-    &__img-box{
+    &__img-box {
         flex: 0 0 45%;
     }
     &__img {
@@ -214,6 +249,12 @@
             }
         }
     }
+    @media only screen and (max-width: 600px) {
+        padding: 0 1.5rem;
+        .contact-links {
+            padding: 2rem 0;
+        }
+    }
 }
 
 .about-me-bg {
@@ -231,8 +272,6 @@
     -webkit-backdrop-filter: blur(10px);
 
     transition: all 0.2s ease-in-out;
-
-    
 }
 
 .about-me {
@@ -296,7 +335,28 @@
         margin-bottom: 2rem;
     }
 
-    .paragraph{
+    .paragraph {
         line-height: 1.6;
+    }
+
+    @media only screen and (max-width: 600px) {
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        max-height: 90vh;
+        overflow: scroll;
+
+        transform: translate(-50%, -40%);
+
+        &__banner {
+            width: 100%;
+            height: 30vh;
+        }
+
+        &__details {
+            width: 100%;
+            text-align: left;
+        }
     }
 }

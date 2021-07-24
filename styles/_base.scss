@@ -114,3 +114,10 @@ body {
 }
 
 // //////////
+
+// Hide on phone
+.hide-on-phone {
+    @media only screen and (max-width: 600px) {
+        display: none !important;
+    }
+}

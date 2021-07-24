@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import PlaySound from "./PlaySound";
+import Link from "next/link";
 
 export default function projects() {
   return (
@@ -39,7 +41,6 @@ export default function projects() {
           eveniet esse magni, odit commodi minima molestiae veritatis sit at
           hic."
         link="https://fxfins.com"
-        playstoreLink="https://play.google.com/store/apps/details?id=com.north2south.sabjigrocery"
         techUsed={[
           "ReactJs",
           "React Bootstrap",
@@ -52,8 +53,28 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        image="sbg-pc.png"
+        image="dentway.png"
         no="03"
+        name="DentWay"
+        summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
+          natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
+          eveniet esse magni, odit commodi minima molestiae veritatis sit at
+          hic."
+        link="https://dentway.in"
+        techUsed={[
+          "ReactJs",
+          "React Bootstrap",
+          "NextJs",
+          "Airtable",
+          "Sass",
+          "git",
+        ]}
+      />
+
+      <ProjectCard
+        flex={1}
+        image="sbg-pc.png"
+        no="04"
         name="SabjiGrocery 2.0"
         summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
           natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
@@ -75,8 +96,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={1}
-        no="04"
+        flex={2}
+        no="05"
         name="A-Lab"
         image="alab.png"
         summery=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
@@ -87,6 +108,14 @@ export default function projects() {
         link="#"
         githubLink="https://github.com/Shubham0850/Amity_Virtual_Lab"
       />
+
+      <Link href="#contact">
+        <a className="btn" onMouseOver={PlaySound}>
+          Explore More
+        </a>
+      </Link>
+
+      {/* 
 
       <ProjectCard
         flex={2}
@@ -142,7 +171,7 @@ export default function projects() {
         techUsed={["HTML 5", "CSS 3", "SASS", "npm", "git"]}
         link="https://natours296.netlify.app/"
         githubLink="https://github.com/Shubham0850/Natours"
-      />
+      /> */}
     </div>
   );
 }
