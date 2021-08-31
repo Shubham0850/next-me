@@ -10,69 +10,34 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        image="sbg1.png"
         no="01"
-        name="SabjiGrocery 1.0"
-        summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
-          natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
-          eveniet esse magni, odit commodi minima molestiae veritatis sit at
-          hic."
-        link="https://SabjiGrocery.com"
-        playstoreLink="https://play.google.com/store/apps/details?id=com.north2south.sabjigrocery"
-        techUsed={[
-          "ReactJs",
-          "NodeJs",
-          "ExpressJs",
-          "MongoDB",
-          "Sass",
-          "PWA",
-          "TWA",
-          "git",
-        ]}
+        name="A-Lab"
+        image="alab.png"
+        summery=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
+        natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
+        eveniet esse magni, odit commodi minima molestiae veritatis sit at
+        hic."
+        techUsed={["ReactJs", "CSS 3", "CRA", "jsx", "React Router", "git"]}
+        link="#"
+        githubLink="https://github.com/Shubham0850/Amity_Virtual_Lab"
       />
 
       <ProjectCard
         flex={1}
-        image="fxfins.png"
         no="02"
-        name="FxFins"
-        summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
-          natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
-          eveniet esse magni, odit commodi minima molestiae veritatis sit at
-          hic."
-        link="https://fxfins.com"
-        techUsed={[
-          "ReactJs",
-          "React Bootstrap",
-          "NextJs",
-          "Airtable",
-          "Sass",
-          "git",
-        ]}
+        name="NoobDev"
+        image="blog.png"
+        summery=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
+        natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
+        eveniet esse magni, odit commodi minima molestiae veritatis sit at
+        hic."
+        techUsed={["ReactJs", "CSS 3", "CRA", "jsx", "React Router", "git"]}
+        link="#"
+        link="https://noobdev.tech"
       />
 
       <ProjectCard
         flex={2}
-        image="dentway.png"
-        no="03"
-        name="DentWay"
-        summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
-          natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
-          eveniet esse magni, odit commodi minima molestiae veritatis sit at
-          hic."
-        link="https://dentway.in"
-        techUsed={[
-          "ReactJs",
-          "React Bootstrap",
-          "NextJs",
-          "Airtable",
-          "Sass",
-          "git",
-        ]}
-      />
-
-      <ProjectCard
-        flex={1}
         image="sbg-pc.png"
         no="04"
         name="SabjiGrocery 2.0"
@@ -96,26 +61,67 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={2}
-        no="05"
-        name="A-Lab"
-        image="alab.png"
-        summery=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
-        natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
-        eveniet esse magni, odit commodi minima molestiae veritatis sit at
-        hic."
-        techUsed={["ReactJs", "CSS 3", "CRA", "jsx", "React Router", "git"]}
-        link="#"
-        githubLink="https://github.com/Shubham0850/Amity_Virtual_Lab"
+        flex={1}
+        image="sbg1.png"
+        no="01"
+        name="SabjiGrocery 1.0"
+        summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
+          natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
+          eveniet esse magni, odit commodi minima molestiae veritatis sit at
+          hic."
+        link="https://SabjiGrocery.com"
+        playstoreLink="https://play.google.com/store/apps/details?id=com.north2south.sabjigrocery"
+        techUsed={[
+          "ReactJs",
+          "NodeJs",
+          "ExpressJs",
+          "MongoDB",
+          "Sass",
+          "PWA",
+          "TWA",
+          "git",
+        ]}
       />
 
-      <Link href="#contact">
-        <a className="btn" onMouseOver={PlaySound}>
-          Explore More
-        </a>
-      </Link>
+      <ProjectCard
+        flex={2}
+        image="fxfins.png"
+        no="02"
+        name="FxFins"
+        summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
+          natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
+          eveniet esse magni, odit commodi minima molestiae veritatis sit at
+          hic."
+        link="https://fxfins.com"
+        techUsed={[
+          "ReactJs",
+          "React Bootstrap",
+          "NextJs",
+          "Airtable",
+          "Sass",
+          "git",
+        ]}
+      />
 
-      {/* 
+      <ProjectCard
+        flex={1}
+        image="dentway.png"
+        no="03"
+        name="DentWay"
+        summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
+          natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
+          eveniet esse magni, odit commodi minima molestiae veritatis sit at
+          hic."
+        link="https://dentway.in"
+        techUsed={[
+          "ReactJs",
+          "React Bootstrap",
+          "NextJs",
+          "Airtable",
+          "Sass",
+          "git",
+        ]}
+      />
 
       <ProjectCard
         flex={2}
@@ -171,7 +177,12 @@ export default function projects() {
         techUsed={["HTML 5", "CSS 3", "SASS", "npm", "git"]}
         link="https://natours296.netlify.app/"
         githubLink="https://github.com/Shubham0850/Natours"
-      /> */}
+      />
     </div>
+    //    <Link href="#contact">
+    //    <a className="btn" onMouseOver={PlaySound}>
+    //      Explore More
+    //    </a>
+    //  </Link>
   );
 }
