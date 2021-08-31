@@ -179,10 +179,6 @@ export default function projects() {
         githubLink="https://github.com/Shubham0850/Natours"
       />
     </div>
-    //    <Link href="#contact">
-    //    <a className="btn" onMouseOver={PlaySound}>
-    //      Explore More
-    //    </a>
-    //  </Link>
+    
   );
 }
