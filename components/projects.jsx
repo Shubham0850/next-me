@@ -2,11 +2,14 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import PlaySound from "./PlaySound";
 import Link from "next/link";
+import { Fade } from "react-reveal";
 
 export default function projects() {
   return (
     <div className="projects-container" id="projects">
-      <h2 className="projects-container__heading">My Recent Projects 👨‍💻</h2>
+      <Fade bottom>
+        <h2 className="projects-container__heading">My Recent Projects 👨‍💻</h2>
+      </Fade>
 
       <ProjectCard
         flex={2}
@@ -32,7 +35,6 @@ export default function projects() {
         eveniet esse magni, odit commodi minima molestiae veritatis sit at
         hic."
         techUsed={["ReactJs", "CSS 3", "CRA", "jsx", "React Router", "git"]}
-        link="#"
         link="https://noobdev.tech"
       />
 
@@ -179,6 +181,5 @@ export default function projects() {
         githubLink="https://github.com/Shubham0850/Natours"
       />
     </div>
-    
   );
 }

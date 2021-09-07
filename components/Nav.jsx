@@ -4,14 +4,8 @@ import NavLogoDark from "../public/logo-dark.png";
 import Image from "next/image";
 import audio from "../public/sound/switch.mp3";
 import About from "./About";
-import {
-  WiSolarEclipse,
-  WiLightning,
-  WiMeteor,
-  WiAlien,
-  WiNightClear,
-} from "react-icons/wi";
 import PlaySound from "./PlaySound";
+import Fade from "react-reveal/Fade"
 
 export default function Nav() {
   const [darkBtn, setDarkBtn] = useState(false);
@@ -40,6 +34,7 @@ export default function Nav() {
   };
 
   return (
+    <Fade bottom>
     <nav className="nav">
       <div className="nav__logo">
         <Image
@@ -86,5 +81,6 @@ export default function Nav() {
         </>
       )}
     </nav>
+    </Fade>
   );
 }
