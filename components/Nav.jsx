@@ -61,7 +61,7 @@ export default function Nav() {
           onMouseOver={PlaySound}
           onClick={showAbout}
         >
-          <a href="https://noobdev.tech/" target="_blank" className="nav__link hide-on-phone">
+          <a href="https://noobdev.tech/" rel="noreferrer" target="_blank" className="nav__link hide-on-phone">
           📝 Blogs
           </a>
         </li>
