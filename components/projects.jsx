@@ -41,7 +41,7 @@ export default function projects() {
       <ProjectCard
         flex={2}
         image="sbg-pc.png"
-        no="04"
+        no="03"
         name="SabjiGrocery 2.0"
         summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
           natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
@@ -65,7 +65,7 @@ export default function projects() {
       <ProjectCard
         flex={1}
         image="sbg1.png"
-        no="01"
+        no="04"
         name="SabjiGrocery 1.0"
         summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
           natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
@@ -88,7 +88,7 @@ export default function projects() {
       <ProjectCard
         flex={2}
         image="fxfins.png"
-        no="02"
+        no="05"
         name="FxFins"
         summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
           natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
@@ -108,7 +108,7 @@ export default function projects() {
       <ProjectCard
         flex={1}
         image="dentway.png"
-        no="03"
+        no="06"
         name="DentWay"
         summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
           natus pariatur, rem itaque unde. Repudiandae aliquam, autem quibusdam
@@ -127,7 +127,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="05"
+        no="07"
         name="Bankist"
         image="bankist.png"
         summery=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
@@ -141,7 +141,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="06"
+        no="08"
         name="Nexter"
         image="nexter-pc.png"
         summery=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
@@ -155,7 +155,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="07"
+        no="09"
         name="Trillo"
         image="trillio-pc.png"
         summery=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse
@@ -169,7 +169,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="08"
+        no="10"
         name="Natours"
         image="natours-pc.png"
         summery="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse

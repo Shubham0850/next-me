@@ -56,6 +56,15 @@ export default function Nav() {
             📜 Projects
           </a>
         </li>
+        <li
+          className="nav__item nav__link hide-on-phone"
+          onMouseOver={PlaySound}
+          onClick={showAbout}
+        >
+          <a href="https://noobdev.tech/" target="_blank" className="nav__link hide-on-phone">
+          📝 Blogs
+          </a>
+        </li>
         <li className="nav__item" onMouseOver={PlaySound}>
           <a data-scroll href="#contact" className="nav__link hide-on-phone">
             🤙 Contact
