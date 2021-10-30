@@ -6,6 +6,7 @@ import {
   IoLogoCodepen,
   IoLogoGithub,
 } from "react-icons/io";
+import { DiGoogleCloudPlatform } from "react-icons/di";
 import { Zoom, Fade } from "react-reveal";
 
 export default function Contact() {
@@ -59,6 +60,13 @@ export default function Contact() {
           >
             <IoLogoCodepen className="icon" title="Codepen" />
           </a>
+          <a
+            href="https://www.qwiklabs.com/public_profiles/c1d9f15e-65d4-4dde-9fcf-8115a883f727"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <DiGoogleCloudPlatform className="icon" title="quicklab" />
+          </a>
         </div>
       </Fade>
 
@@ -69,9 +77,10 @@ export default function Contact() {
       </Fade>
 
       <Fade bottom>
-      <p className="copyright">
-        &copy; All right is reserved by Shubham Raj | Made with ❤️ and ☕ by me
-      </p>
+        <p className="copyright">
+          &copy; All right is reserved by Shubham Raj | Made with ❤️ and ☕ by
+          me
+        </p>
       </Fade>
     </footer>
   );
