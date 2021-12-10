@@ -64,6 +64,26 @@ export default function projects() {
       <ProjectCard
         flex={1}
         no="04"
+        name="SBR photof ilms"
+        image="sbr.png"
+        summery="SBR Photofilms is a team of top candid wedding photographers and wedding filmers in India. SBR Photofilms is headed by Rishav Agarwal. Who is one of the pioneers in the field of candid wedding photography in India."
+        techUsed={["ReactJs", "NextJs", "SASS", "npm", "git", "React Revel"]}
+        link="https://sbrphotofilms.com/"
+      />
+
+      <ProjectCard
+        flex={2}
+        no="05"
+        name="Invoice App"
+        image="invoice.png"
+        summery="Invoice App is a fast and easy invoice app for sending invoices and estimates to your customers. Invoice App is the perfect invoice maker.Create, send and track invoices and estimates easily on your phone. Manage all of your billing while on the go so you can get paid faster. Send the estimate or invoice before you even leave the customer!"
+        techUsed={["React Native", "Native Base", "React Navigation", "npm", "git", "React Native Camera"]}
+        link="https://shubhamraj.live/"
+      />
+
+      <ProjectCard
+        flex={1}
+        no="06"
         name="Artistry"
         image="artistry.png"
         summery="Artistry Inc is a brand that resonates with quality designer products that promise a subtle yet elegant touch. The company has been synonymous with luxury, quality and perfection ever since its inception."
@@ -74,7 +94,7 @@ export default function projects() {
       <ProjectCard
         flex={2}
         image="fxfins.png"
-        no="05"
+        no="07"
         name="FxFins"
         summery="Forex Treadig web-application. Who help forex traders make the most profitable and efficient trading decisions. FxFins come into existence to give user access to the Forex market and provide best services. Experience it yourself."
         link="https://fxfins.com"
@@ -91,7 +111,7 @@ export default function projects() {
       <ProjectCard
         flex={1}
         image="dentway.png"
-        no="06"
+        no="08"
         name="DentWay"
         summery="Dentway in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services."
         link="https://dentway.in"
@@ -107,18 +127,18 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="07"
+        no="09"
         name="Bankist"
         image="bankist.png"
         summery="I have build this project from an Udemy course name The Complete JavaScript Course 2021: From Zero to Expert!. and learnt so many thing while building this project. This webpage is a landing page of a Bank name Bankist."
-        techUsed={["HTML 5", "npm", "SASS","javascript", "git"]}
+        techUsed={["HTML 5", "npm", "SASS", "javascript", "git"]}
         link="#"
         githubLink="#"
       />
 
       <ProjectCard
         flex={1}
-        no="08"
+        no="10"
         name="Nexter"
         image="nexter-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Nexter is a company who sell expensive villas and home via their website."
@@ -129,7 +149,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="09"
+        no="11"
         name="Trillo"
         image="trillio-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Trillo is a clone of Airbnb. Trillo just has the layout not any functionality."
@@ -140,7 +160,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="10"
+        no="12"
         name="Natours"
         image="natours-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Natours is build to sell Tours via their website."
@@ -151,7 +171,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="11"
+        no="13"
         name="Techotsav 2020"
         image="techotsav.png"
         summery="Techotsav 2020 was the event organised by Posh Production Entertainment Pvt Ltd. The event was going to be organised at Funtasia Water Park - Patna. But due to covid-19 the event was not organised."
@@ -162,7 +182,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="12"
+        no="14"
         name="Tesla Clone"
         image="tesla.png"
         summery="I have built this application on React Native. And also generated apk file and uploaded to gdrive. I learnt React Native from a YouTube channel name notJust.dev. and after learning, I have completed this project."
