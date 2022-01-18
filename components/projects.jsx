@@ -77,7 +77,14 @@ export default function projects() {
         name="Invoice App"
         image="invoice.png"
         summery="Invoice App is a fast and easy invoice app for sending invoices and estimates to your customers. Invoice App is the perfect invoice maker.Create, send and track invoices and estimates easily on your phone. Manage all of your billing while on the go so you can get paid faster. Send the estimate or invoice before you even leave the customer!"
-        techUsed={["React Native", "Native Base", "React Navigation", "npm", "git", "React Native Camera"]}
+        techUsed={[
+          "React Native",
+          "Native Base",
+          "React Navigation",
+          "npm",
+          "git",
+          "React Native Camera",
+        ]}
         link="https://shubhamraj.live/"
       />
 
@@ -189,6 +196,17 @@ export default function projects() {
         techUsed={["React Native", "npm", "git"]}
         link="https://drive.google.com/file/d/1cTCmG6hAILMWZtxiNO78DL1SDp34lA7D/view?usp=sharing"
         githubLink="https://github.com/Shubham0850/tesla-clone"
+      />
+
+      <ProjectCard
+        flex={2}
+        no="15"
+        name="Culture of Bihar"
+        image="bihar.png"
+        summery="I have built this website on top of React. I have build this website on a hackathon organised by Amity University. This is a webiste whic tell us about the different culures of Bihar."
+        techUsed={["React", "npm", "git", "Next.Js"]}
+        link="https://bihar.vercel.app/"
+        githubLink="https://github.com/Shubham0850/bihar"
       />
     </div>
   );
