@@ -12,9 +12,29 @@ export default function projects() {
       </Fade>
 
       <ProjectCard
+        flex={0}
+        image="cpay.png"
+        no="01"
+        name="CryptoPay"
+        summery="All in one crypto wallet for all your need. We make it safe & easy for you to store, buy, send, receive, swap tokens and collect NFTs on the Solana blockchain."
+        link="https://cpay.vercel.app/"
+        techUsed={[
+          "ReactJs",
+          "NextJs",
+          "MUI",
+          "bip39",
+          "Sass",
+          "@Solana/pay",
+          "PWA",
+          "TWA",
+          "git",
+        ]}
+      />
+
+      <ProjectCard
         flex={1}
         image="sbg-phone.png"
-        no="01"
+        no="02"
         name="SabjiGrocery"
         summery="Patna's most convenient online grocery channel SabjiGrocery makes your grocery shopping even simpler and at affordable prices right at your doorstep. Full MERN stack application available for web and playstore."
         link="https://sabjigrocery-new.vercel.app/"
@@ -34,7 +54,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="02"
+        no="03"
         name="A-Lab"
         image="alab.png"
         summery="Virtual Platform designed to develop your engineering skills through lab work . Through this approach, Virtual Lab aims to ease the learning process by involving students in practical activities carried out in a virtual laboratory using technologies such as 3D and Virtual Reality.
@@ -53,7 +73,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="03"
+        no="04"
         name="ETM Bikes"
         image="etm.png"
         summery="Navomesh Stavya India Pvt. Ltd. is a startup recognized and funded by Bihar Start-up , Department of Industries, Govt. of Bihar and Indian Institute of Technology Patna (IIT Patna).
@@ -64,7 +84,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="04"
+        no="05"
         name="Navomesh Stavya"
         image="navomesh.png"
         summery="Navomesh Stavya India Pvt. Ltd. is a startup recognized and funded by Bihar Start-up , Department of Industries, Govt. of Bihar and Indian Institute of Technology Patna (IIT Patna).
@@ -75,7 +95,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="05"
+        no="06"
         name="NoobDev"
         image="blog.png"
         summery="NoobDev is a hashnode site, where i used to write blogs about web-development and software-development. I am also a hashnode Ambassador. If you want to learn something, do check this website."
@@ -85,7 +105,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="06"
+        no="07"
         name="SBR photof ilms"
         image="sbr.png"
         summery="SBR Photofilms is a team of top candid wedding photographers and wedding filmers in India. SBR Photofilms is headed by Rishav Agarwal. Who is one of the pioneers in the field of candid wedding photography in India."
@@ -95,7 +115,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="07"
+        no="08"
         name="Invoice App"
         image="invoice.png"
         summery="Invoice App is a fast and easy invoice app for sending invoices and estimates to your customers. Invoice App is the perfect invoice maker.Create, send and track invoices and estimates easily on your phone. Manage all of your billing while on the go so you can get paid faster. Send the estimate or invoice before you even leave the customer!"
@@ -112,7 +132,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="08"
+        no="09"
         name="Artistry"
         image="artistry.png"
         summery="Artistry Inc is a brand that resonates with quality designer products that promise a subtle yet elegant touch. The company has been synonymous with luxury, quality and perfection ever since its inception."
@@ -123,7 +143,7 @@ export default function projects() {
       <ProjectCard
         flex={1}
         image="fxfins.png"
-        no="09"
+        no="10"
         name="FxFins"
         summery="Forex Treadig web-application. Who help forex traders make the most profitable and efficient trading decisions. FxFins come into existence to give user access to the Forex market and provide best services. Experience it yourself."
         link="https://fxfins.com"
@@ -140,7 +160,7 @@ export default function projects() {
       <ProjectCard
         flex={2}
         image="dentway.png"
-        no="10"
+        no="11"
         name="DentWay"
         summery="Dentway in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services."
         link="https://dentway.in"
@@ -154,7 +174,7 @@ export default function projects() {
         ]}
       />
 
-      <ProjectCard
+      {/* <ProjectCard
         flex={1}
         no="11"
         name="Bankist"
@@ -174,9 +194,9 @@ export default function projects() {
         techUsed={["HTML 5", "CSS 3", "SASS", "npm", "git"]}
         link="https://nexter296.netlify.app/"
         githubLink="https://github.com/Shubham0850/Nexter"
-      />
+      /> */}
 
-      <ProjectCard
+      {/* <ProjectCard
         flex={1}
         no="13"
         name="Trillo"
@@ -196,33 +216,11 @@ export default function projects() {
         techUsed={["HTML 5", "CSS 3", "SASS", "npm", "git"]}
         link="https://natours296.netlify.app/"
         githubLink="https://github.com/Shubham0850/Natours"
-      />
+      /> */}
 
       <ProjectCard
         flex={1}
-        no="15"
-        name="Techotsav 2020"
-        image="techotsav.png"
-        summery="Techotsav 2020 was the event organised by Posh Production Entertainment Pvt Ltd. The event was going to be organised at Funtasia Water Park - Patna. But due to covid-19 the event was not organised."
-        techUsed={["HTML 5", "CSS 3", "npm", "git"]}
-        link="https://techotsav.netlify.app/"
-        githubLink="https://github.com/Shubham0850/techotsav"
-      />
-
-      <ProjectCard
-        flex={2}
-        no="16"
-        name="Tesla Clone"
-        image="tesla.png"
-        summery="I have built this application on React Native. And also generated apk file and uploaded to gdrive. I learnt React Native from a YouTube channel name notJust.dev. and after learning, I have completed this project."
-        techUsed={["React Native", "npm", "git"]}
-        link="https://drive.google.com/file/d/1cTCmG6hAILMWZtxiNO78DL1SDp34lA7D/view?usp=sharing"
-        githubLink="https://github.com/Shubham0850/tesla-clone"
-      />
-
-      <ProjectCard
-        flex={1}
-        no="17"
+        no="12"
         name="Culture of Bihar"
         image="bihar.png"
         summery="I have built this website on top of React. I have build this website on a hackathon organised by Amity University. This is a webiste whic tell us about the different culures of Bihar."
@@ -233,7 +231,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="18"
+        no="13"
         name="Talking Butler"
         image="t-b.png"
         summery="We do not cook, we create your emotion

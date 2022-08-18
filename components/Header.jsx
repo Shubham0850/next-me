@@ -26,12 +26,12 @@ export default function Header() {
       </Zoom>
 
       <Fade bottom>
-        <h2 className="heading-secondary">Hi👋, I am Shubham Raj</h2>
+        <h2 className="heading-secondary">Hi👋, I am Shubham Raj (Gulzari)</h2>
       </Fade>
 
       <Zoom bottom>
         <h1 className="heading-primary">
-          Self taught📚 Full Stack developer👨‍💻
+          Self taught📚 WE₿3 Developer👨‍💻
           <br />& Software Engineer🎓
         </h1>
       </Zoom>

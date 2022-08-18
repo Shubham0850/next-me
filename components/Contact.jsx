@@ -71,9 +71,7 @@ export default function Contact() {
       </Fade>
 
       <Fade left>
-        <h3 className="heading-secondary">
-          🙋Available for freelance projects
-        </h3>
+        <h3 className="heading-secondary">👨‍💻Building projects on Blockchain</h3>
       </Fade>
 
       <Fade bottom>
