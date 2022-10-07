@@ -30,7 +30,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/shubham-raj-98b7521a6/"
+            href="https://www.linkedin.com/in/shubham0850/"
             target="_blank"
             rel="noreferrer"
           >
@@ -46,20 +46,13 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://twitter.com/rajshubham0850"
+            href="https://twitter.com/Shubham0850"
             target="_blank"
             rel="noreferrer"
           >
             <IoLogoTwitter className="icon" title="Twitter" />
           </a>
 
-          <a
-            href="https://codepen.io/rajshubham0850"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <IoLogoCodepen className="icon" title="Codepen" />
-          </a>
           <a
             href="https://www.qwiklabs.com/public_profiles/c1d9f15e-65d4-4dde-9fcf-8115a883f727"
             target="_blank"

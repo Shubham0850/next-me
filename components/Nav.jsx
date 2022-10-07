@@ -44,15 +44,6 @@ export default function Nav() {
           />
         </div>
         <ul className="nav__items ">
-          {/* <a href="/files/resume.pdf" download target="_blank"
-    rel="noopener noreferrer">
-            <li
-              className="nav__item nav__link hide-on-phone"
-              onMouseOver={PlaySound}
-            >
-              🧔Resume
-            </li>
-          </a> */}
           <li className="nav__item" onMouseOver={PlaySound}>
             <a data-scroll href="#projects" className="nav__link hide-on-phone">
               📜 Projects
@@ -64,7 +55,7 @@ export default function Nav() {
             onClick={showAbout}
           >
             <a
-              href="https://noobdev.tech/"
+              href="https://noobdev.hashnode.dev/"
               rel="noreferrer"
               target="_blank"
               className="nav__link hide-on-phone"
