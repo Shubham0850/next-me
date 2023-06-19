@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import NavLogoLight from "../public/logo-light.png";
-import NavLogoDark from "../public/logo-dark.png";
+import NavLogoLight from "../public/logo-light.svg";
+import NavLogoDark from "../public/logo-dark.svg";
 import Image from "next/image";
 import audio from "../public/sound/switch.mp3";
 import About from "./About";
