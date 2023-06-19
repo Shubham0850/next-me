@@ -11,7 +11,7 @@ export default function projects() {
         <h2 className="projects-container__heading">My Recent Projects 👨‍💻</h2>
       </Fade>
 
-      {/* <ProjectCard
+      <ProjectCard
         flex={0}
         image="cpay.png"
         no="00"
@@ -29,7 +29,7 @@ export default function projects() {
           "TWA",
           "git",
         ]}
-      /> */}
+      />
 
       <ProjectCard
         flex={1}
@@ -59,7 +59,7 @@ export default function projects() {
         image="sbr.png"
         summery="SBR Photofilms is a team of top candid wedding photographers and wedding filmers in India. SBR Photofilms is headed by Rishav Agarwal. Who is one of the pioneers in the field of candid wedding photography in India."
         techUsed={["ReactJs", "NextJs", "SASS", "npm", "git", "React Revel"]}
-        link="https://sbrphotofilms.com/"
+        link="https://sbrphotofilms.vercel.app/"
       />
 
       <ProjectCard
@@ -102,7 +102,6 @@ export default function projects() {
         link="https://noobdev.hashnode.dev/"
       />
 
-      
       <ProjectCard
         flex={0}
         no="06"
@@ -117,7 +116,7 @@ export default function projects() {
           "git",
           "React Native Camera",
         ]}
-        link="https://shubhamraj.live/"
+        link="#"
       />
 
       <ProjectCard
@@ -127,7 +126,7 @@ export default function projects() {
         image="artistry.png"
         summery="Artistry Inc is a brand that resonates with quality designer products that promise a subtle yet elegant touch. The company has been synonymous with luxury, quality and perfection ever since its inception."
         techUsed={["ReactJs", "NextJs", "SASS", "npm", "git", "React Revel"]}
-        link="https://new-artistry.vercel.app/"
+        link="https://www.artistryinc.in/"
       />
 
       <ProjectCard
@@ -153,7 +152,7 @@ export default function projects() {
         no="09"
         name="DentWay"
         summery="Dentway in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services."
-        link="https://dentway.in"
+        link="https://dentway.vercel.app/"
         techUsed={[
           "ReactJs",
           "React Bootstrap",
@@ -164,7 +163,7 @@ export default function projects() {
         ]}
       />
 
-<ProjectCard
+      <ProjectCard
         flex={0}
         no="10"
         name="Culture of Bihar"
@@ -183,23 +182,12 @@ export default function projects() {
         summery="We do not cook, we create your emotion
         North Indian, Chinese & Continental cuisine served in a rooftop restaurant with city views."
         techUsed={["React", "npm", "git", "Next.Js", "Google Map"]}
-        link="https://www.talkingbutler.com/"
-      />
-
-      <ProjectCard
-        flex={0}
-        no="12"
-        name="Bankist"
-        image="bankist.png"
-        summery="I have build this project from an Udemy course name The Complete JavaScript Course 2021: From Zero to Expert!. and learnt so many thing while building this project. This webpage is a landing page of a Bank name Bankist."
-        techUsed={["HTML 5", "npm", "SASS", "javascript", "git"]}
-        link="#"
-        githubLink="#"
+        link="https://talking-butler.vercel.app/"
       />
 
       <ProjectCard
         flex={2}
-        no="13"
+        no="12"
         name="Nexter"
         image="nexter-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Nexter is a company who sell expensive villas and home via their website."
@@ -210,7 +198,7 @@ export default function projects() {
 
       <ProjectCard
         flex={1}
-        no="14"
+        no="13"
         name="Trillo"
         image="trillio-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Trillo is a clone of Airbnb. Trillo just has the layout not any functionality."
@@ -221,7 +209,7 @@ export default function projects() {
 
       <ProjectCard
         flex={2}
-        no="15"
+        no="14"
         name="Natours"
         image="natours-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Natours is build to sell Tours via their website."
@@ -229,8 +217,6 @@ export default function projects() {
         link="https://natours296.netlify.app/"
         githubLink="https://github.com/Shubham0850/Natours"
       />
-
-
     </div>
   );
 }
