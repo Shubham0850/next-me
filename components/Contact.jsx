@@ -14,12 +14,8 @@ export default function Contact() {
     <footer className="footer" id="contact">
       <Zoom bottom>
         <h1 className="heading-primary">
-          I like to resolve design problems,
-          <br />
-          create smart user interface
-          <br />
-          and imagine useful interaction, developing <br />
-          rich web experiences & web applications.
+          I&apos;m a Design Troubleshooter 🕵️‍♂️,<br/> User Interface Magician 🧙‍♂️,<br/> and
+          Daydreamer of Interactive <br/>Awesomeness ✨.<br/> 
         </h1>
       </Zoom>
 
