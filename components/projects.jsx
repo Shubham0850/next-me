@@ -53,8 +53,59 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={2}
+        flex={0}
+        image="collably.png"
         no="02"
+        name="Collably Network"
+        summery="Collab Network isn't just a platform; it's your partner for project success. Join us in reshaping industries, accelerating progress, and shape a future powered by collaborations that transcend limits."
+        link="https://www.collably.network/"
+        techUsed={[
+          "NextJS",
+          "MUI",
+          "Tailwind",
+          "wgmi",
+          "Web3.js",
+          "Solidity",
+          "git",
+        ]}
+      />
+
+      <ProjectCard
+        flex={1}
+        image="hashmind.png"
+        no="03"
+        name="#Mind"
+        summery="We are fueling the dreams of pioneers and captivating the hearts of consumers. Our venture studio embarks on a transformative journey with industry expert teams, bridging the realms of Web3 and AI, weaving extraordinary projects that leave a lasting impression."
+        link="https://hashmind.vercel.app/"
+        techUsed={[
+          "ReactJs",
+          "NextJS",
+          "Chakra UI",
+          "Tailwind",
+          "git",
+        ]}
+      />
+
+      <ProjectCard
+        flex={0}
+        image="asva.png"
+        no="04"
+        name="Asva Ventures"
+        summery="A venture fund focused on blockchain, strategically investing in pre-seed and seed companies. We lead, as well as co-invest, while leveraging our invaluable expertise to propel growth in portfolio companies"
+        link="https://asvaventures.com/"
+        techUsed={[
+          "ReactJs",
+          "NextJS",
+          "Chakra UI",
+          "Tailwind",
+          "axios",
+          "git",
+        ]}
+      />
+
+      <ProjectCard
+        flex={1}
+        no="05"
         name="SBR photof ilms"
         image="sbr.png"
         summery="SBR Photofilms is a team of top candid wedding photographers and wedding filmers in India. SBR Photofilms is headed by Rishav Agarwal. Who is one of the pioneers in the field of candid wedding photography in India."
@@ -63,8 +114,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={1}
-        no="03"
+        flex={0}
+        no="06"
         name="ETM Bikes"
         image="etm.png"
         summery="Navomesh Stavya India Pvt. Ltd. is a startup recognized and funded by Bihar Start-up , Department of Industries, Govt. of Bihar and Indian Institute of Technology Patna (IIT Patna).
@@ -74,8 +125,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={2}
-        no="04"
+        flex={1}
+        no="07"
         name="A-Lab"
         image="alab.png"
         summery="Virtual Platform designed to develop your engineering skills through lab work . Through this approach, Virtual Lab aims to ease the learning process by involving students in practical activities carried out in a virtual laboratory using technologies such as 3D and Virtual Reality.
@@ -93,8 +144,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={1}
-        no="05"
+        flex={0}
+        no="08"
         name="NoobDev"
         image="blog.png"
         summery="NoobDev is a hashnode site, where i used to write blogs about web-development and software-development. I am also a hashnode Ambassador. If you want to learn something, do check this website."
@@ -103,8 +154,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={0}
-        no="06"
+        flex={1}
+        no="09"
         name="Invoice App"
         image="invoice.png"
         summery="Invoice App is a fast and easy invoice app for sending invoices and estimates to your customers. Invoice App is the perfect invoice maker.Create, send and track invoices and estimates easily on your phone. Manage all of your billing while on the go so you can get paid faster. Send the estimate or invoice before you even leave the customer!"
@@ -120,8 +171,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={1}
-        no="07"
+        flex={0}
+        no="10"
         name="Artistry"
         image="artistry.png"
         summery="Artistry Inc is a brand that resonates with quality designer products that promise a subtle yet elegant touch. The company has been synonymous with luxury, quality and perfection ever since its inception."
@@ -130,9 +181,9 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={0}
+        flex={1}
         image="fxfins.png"
-        no="08"
+        no="11"
         name="FxFins"
         summery="Forex Treadig web-application. Who help forex traders make the most profitable and efficient trading decisions. FxFins come into existence to give user access to the Forex market and provide best services. Experience it yourself."
         link="https://fxfins-akqee0l6z-shubham0850.vercel.app/"
@@ -147,9 +198,9 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={1}
+        flex={0}
         image="dentway.png"
-        no="09"
+        no="12"
         name="DentWay"
         summery="Dentway in Patna offers a host of treatments and cures for a wide range of dental ailments faced by the patients. Few of the dental procedures they offer range from inducing fillings and repairs in the tooth and many other dental services."
         link="https://dentway.vercel.app/"
@@ -164,8 +215,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={0}
-        no="10"
+        flex={1}
+        no="13"
         name="Culture of Bihar"
         image="bihar.png"
         summery="I have built this website on top of React. I have build this website on a hackathon organised by Amity University. This is a webiste whic tell us about the different culures of Bihar."
@@ -175,8 +226,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={1}
-        no="11"
+        flex={0}
+        no="14"
         name="Talking Butler"
         image="t-b.png"
         summery="We do not cook, we create your emotion
@@ -186,8 +237,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={2}
-        no="12"
+        flex={1}
+        no="15"
         name="Nexter"
         image="nexter-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Nexter is a company who sell expensive villas and home via their website."
@@ -197,8 +248,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={1}
-        no="13"
+        flex={0}
+        no="16"
         name="Trillo"
         image="trillio-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Trillo is a clone of Airbnb. Trillo just has the layout not any functionality."
@@ -208,8 +259,8 @@ export default function projects() {
       />
 
       <ProjectCard
-        flex={2}
-        no="14"
+        flex={1}
+        no="17"
         name="Natours"
         image="natours-pc.png"
         summery="I have build this project from an Udemy course name Advanced CSS and Sass: Flexbox, Grid, Animations and More!. and learnt so many thing while building this project. Natours is build to sell Tours via their website."
